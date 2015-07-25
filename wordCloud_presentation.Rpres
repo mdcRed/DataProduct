@@ -25,16 +25,17 @@ Approach
 
 - <span style="color:pink">Using R Text Mining, tm package</span> to perform the basic text mining steps; they are:
     - convert all words to lower cases
-    - remove punctuation marks
-    - remove numbers
-    - remove stop words in English (Ref. 1)
+    - remove punctuation marks, numbers, English stop words (Ref. 1)
     - form a Term Document Matrix (TDM) of word frequency
 - <span style="color:pink">Using R WordCloud package</span> to plot the TDM
 - <span style="color:pink">Using R Shiny package</span> to implement the web application
-- <span style="color:pink">Data:</span> 
-    - Award grants by National Science Foundataion (NSF) on public domain (Ref. 2)
-    - Obtain only text of the abstract, save the text to file.  Each award abstract is in a file
-    - At run time read-in only file name to serve as choice on a drop down list for users to choose from.
+
+Data Source used in this Application
+====
+
+-  <span style="color:pink">Public domain</span> of National Science Foundation (see Ref. 2) lists awarded grants.
+- Extract and capture only abstracts for a handful of awards.  The abstracts are saved into files, served as corpus for text mining.  Each award abstract is in one file. 
+- At run time, file name of each award abstracts is separated and serve as choices in a drop down list, from there users may select to view the word cloud respresent the text.
     
 Application Structure
 ===
@@ -88,9 +89,9 @@ Result
 
 References
 ========================================================
-1.  Ref.  1.  SMART Stop words: [here] (http://jmlr.csail.mit.edu/papers/volume5/lewis04a/a11-smart-stop-list/english.stop)
+1.  Ref.  1.  SMART Stop words. [[here]] (http://jmlr.csail.mit.edu/papers/volume5/lewis04a/a11-smart-stop-list/english.stop)
 
-2. Ref. 2. National Science Founcation awards on public domain [here] (https://www.nsf.gov/awards/about.jsp).  Scroll down  and click on  [Recent Awards] (https://www.fastlane.nsf.gov/servlet/A6RecentWeeks)
+2. Ref. 2. National Science Founcation awards on public domain [[here]] (https://www.nsf.gov/awards/about.jsp).  Scroll down  and click on  [Recent Awards] (https://www.fastlane.nsf.gov/servlet/A6RecentWeeks)
 
 
 ![Thank You](images/thankyou.png)
